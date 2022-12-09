@@ -1,0 +1,225 @@
+
+*** Running vivado
+    with args -log push_button.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source push_button.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source push_button.tcl -notrace
+Command: link_design -top push_button -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc]
+WARNING: [Vivado 12-584] No ports matched 'U'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'U'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'D'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'C'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'C'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pA'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pA'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pB'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pB'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pC'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pC'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pD'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pD'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pD'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pD'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prst'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'prst'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'O[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc]
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc]
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc]
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 60 Warnings, 60 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 608.789 ; gain = 303.805
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.867 . Memory (MB): peak = 623.848 ; gain = 15.059
+
+Starting Cache Timing Information Task
