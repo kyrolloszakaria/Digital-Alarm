@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/Digital Alarm/Digital_Alarm.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sim_1/new/TB_functionality.v,1670627322,verilog,,,,TB_functionality,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/Digital_Alarm.v,1670627086,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/RSD_Moore.v,,Digital_Alarm,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/RSD_Moore.v,1670215819,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/UD_counter.v,,RSD_Moore,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/UD_counter.v,1670625703,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v,,UD_counter,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v,1670618872,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v,,clk_divider,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v,1670217935,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/pb_det.v,,debouncer,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/pb_det.v,1670619685,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v,,pb_det,,,,,,,,
+D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v,1670619685,verilog,,D:/Digital Alarm/Digital_Alarm.srcs/sim_1/new/TB_functionality.v,,synchronizer,,,,,,,,
