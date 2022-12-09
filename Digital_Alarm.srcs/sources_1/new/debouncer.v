@@ -1,4 +1,23 @@
 `timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/27/2022 04:55:55 PM
+// Design Name: 
+// Module Name: debouncer
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
 module debouncer(input clk, rst, in, output out);
 reg q1,q2,q3;
@@ -16,3 +35,4 @@ always@(posedge clk, posedge rst) begin
 end
 assign out = (rst) ? 0 : q1&q2&q3;
 endmodule
+
