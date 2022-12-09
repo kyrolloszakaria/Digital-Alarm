@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670628214">
-  <File Type="BITSTR-BMM" Name="pb_det_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="pb_det_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="pb_det_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="pb_det_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="pb_det.tcl"/>
-  <File Type="OPT-TIMING" Name="pb_det_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="pb_det_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="pb_det_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="pb_det_reports.tcl"/>
-  <File Type="OPT-DRC" Name="pb_det_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="pb_det.hwdef"/>
-  <File Type="PWROPT-DCP" Name="pb_det_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="pb_det_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="pb_det_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="pb_det_placed.dcp"/>
-  <File Type="PLACE-IO" Name="pb_det_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="pb_det_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="pb_det_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="pb_det_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="pb_det_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="pb_det_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="pb_det_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="pb_det.bgn"/>
-  <File Type="PLACE-TIMING" Name="pb_det_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="pb_det_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="pb_det.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="pb_det_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="pb_det_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="pb_det_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="pb_det.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="pb_det_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="pb_det_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="pb_det_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="pb_det_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="pb_det_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="pb_det_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670628928">
+  <File Type="BITSTR-BMM" Name="push_button_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="push_button_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="push_button_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="push_button_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="push_button.tcl"/>
+  <File Type="OPT-TIMING" Name="push_button_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="push_button_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="push_button_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="push_button_reports.tcl"/>
+  <File Type="OPT-DRC" Name="push_button_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="push_button.hwdef"/>
+  <File Type="PWROPT-DCP" Name="push_button_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="push_button_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="push_button_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="push_button_placed.dcp"/>
+  <File Type="PLACE-IO" Name="push_button_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="push_button_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="push_button_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="push_button_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="push_button_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="push_button_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="push_button_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="push_button.bgn"/>
+  <File Type="PLACE-TIMING" Name="push_button_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="push_button_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="push_button.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="push_button_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="push_button_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="push_button_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="push_button.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="push_button_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="push_button_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="push_button_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="push_button_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="push_button_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="push_button_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="pb_det.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="pb_det_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="pb_det.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="pb_det_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pb_det_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="pb_det.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pb_det_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="pb_det_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="pb_det_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="pb_det_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="pb_det_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="pb_det_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="pb_det_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="pb_det_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="pb_det_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="pb_det_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="pb_det_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="pb_det_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pb_det_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pb_det_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pb_det_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pb_det_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pb_det_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pb_det_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pb_det_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="pb_det.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pb_det_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="pb_det.rbt"/>
-  <File Type="BITSTR-NKY" Name="pb_det.nky"/>
-  <File Type="BG-DRC" Name="pb_det.drc"/>
-  <File Type="RDI-RDI" Name="pb_det.vdi"/>
+  <File Type="BITSTR-LTX" Name="push_button.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="push_button_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="push_button.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="push_button_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="push_button_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="push_button.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="push_button_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="push_button_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="push_button_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="push_button_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="push_button_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="push_button_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="push_button_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="push_button_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="push_button_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="push_button_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="push_button_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="push_button_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="push_button_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="push_button_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="push_button_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="push_button_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="push_button_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="push_button_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="push_button_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="push_button.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="push_button_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="push_button.rbt"/>
+  <File Type="BITSTR-NKY" Name="push_button.nky"/>
+  <File Type="BG-DRC" Name="push_button.drc"/>
+  <File Type="RDI-RDI" Name="push_button.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -99,8 +99,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/push_button.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/pb_det.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -156,7 +164,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="pb_det"/>
+      <Option Name="TopModule" Val="push_button"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

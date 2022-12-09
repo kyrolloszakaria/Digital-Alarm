@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log pb_det.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pb_det.tcl -notrace
+EAStep vivado -log push_button.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source push_button.tcl -notrace
 
 

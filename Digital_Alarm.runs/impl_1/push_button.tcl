@@ -74,11 +74,11 @@ set rc [catch {
   set_property parent.project_path {D:/Digital Alarm/Digital_Alarm.xpr} [current_project]
   set_property ip_output_repo {{D:/Digital Alarm/Digital_Alarm.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{D:/Digital Alarm/Digital_Alarm.runs/synth_1/pb_det.dcp}}
+  add_files -quiet {{D:/Digital Alarm/Digital_Alarm.runs/synth_1/push_button.dcp}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc}}
-  link_design -top pb_det -part xc7a35tcpg236-1
+  link_design -top push_button -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -94,8 +94,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force pb_det_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file pb_det_drc_opted.rpt -pb pb_det_drc_opted.pb -rpx pb_det_drc_opted.rpx"
+  write_checkpoint -force push_button_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file push_button_drc_opted.rpt -pb push_button_drc_opted.pb -rpx push_button_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -114,10 +114,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force pb_det_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file pb_det_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file pb_det_utilization_placed.rpt -pb pb_det_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file pb_det_control_sets_placed.rpt"
+  write_checkpoint -force push_button_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file push_button_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file push_button_utilization_placed.rpt -pb push_button_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file push_button_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -133,19 +133,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force pb_det_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file pb_det_drc_routed.rpt -pb pb_det_drc_routed.pb -rpx pb_det_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file pb_det_methodology_drc_routed.rpt -pb pb_det_methodology_drc_routed.pb -rpx pb_det_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file pb_det_power_routed.rpt -pb pb_det_power_summary_routed.pb -rpx pb_det_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file pb_det_route_status.rpt -pb pb_det_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file pb_det_timing_summary_routed.rpt -pb pb_det_timing_summary_routed.pb -rpx pb_det_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file pb_det_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file pb_det_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file pb_det_bus_skew_routed.rpt -pb pb_det_bus_skew_routed.pb -rpx pb_det_bus_skew_routed.rpx"
+  write_checkpoint -force push_button_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file push_button_drc_routed.rpt -pb push_button_drc_routed.pb -rpx push_button_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file push_button_methodology_drc_routed.rpt -pb push_button_methodology_drc_routed.pb -rpx push_button_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file push_button_power_routed.rpt -pb push_button_power_summary_routed.pb -rpx push_button_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file push_button_route_status.rpt -pb push_button_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file push_button_timing_summary_routed.rpt -pb push_button_timing_summary_routed.pb -rpx push_button_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file push_button_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file push_button_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file push_button_bus_skew_routed.rpt -pb push_button_bus_skew_routed.pb -rpx push_button_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force pb_det_routed_error.dcp
+  write_checkpoint -force push_button_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -157,10 +157,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force pb_det.mmi }
-  write_bitstream -force pb_det.bit 
-  catch {write_debug_probes -quiet -force pb_det}
-  catch {file copy -force pb_det.ltx debug_nets.ltx}
+  catch { write_mem_info -force push_button.mmi }
+  write_bitstream -force push_button.bit 
+  catch {write_debug_probes -quiet -force push_button}
+  catch {file copy -force push_button.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

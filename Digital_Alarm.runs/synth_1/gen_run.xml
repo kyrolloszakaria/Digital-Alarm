@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670628214">
-  <File Type="PA-TCL" Name="pb_det.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="pb_det_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="pb_det_reports.tcl"/>
-  <File Type="RDS-RDS" Name="pb_det.vds"/>
-  <File Type="RDS-UTIL" Name="pb_det_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="pb_det_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="pb_det.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="pb_det_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="pb_det_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670628928">
+  <File Type="PA-TCL" Name="push_button.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="push_button_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="push_button_reports.tcl"/>
+  <File Type="RDS-RDS" Name="push_button.vds"/>
+  <File Type="RDS-UTIL" Name="push_button_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="push_button_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="push_button.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="push_button_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="push_button_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/RSD_Moore.v">
@@ -39,8 +39,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/push_button.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/pb_det.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -96,7 +104,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="pb_det"/>
+      <Option Name="TopModule" Val="push_button"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

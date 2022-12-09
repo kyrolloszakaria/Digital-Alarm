@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Dec 10 01:23:36 2022
-# Process ID: 38680
+# Start of session at: Sat Dec 10 01:35:30 2022
+# Process ID: 16116
 # Current directory: D:/Digital Alarm/Digital_Alarm.runs/synth_1
-# Command line: vivado.exe -log pb_det.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pb_det.tcl
-# Log file: D:/Digital Alarm/Digital_Alarm.runs/synth_1/pb_det.vds
+# Command line: vivado.exe -log push_button.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source push_button.tcl
+# Log file: D:/Digital Alarm/Digital_Alarm.runs/synth_1/push_button.vds
 # Journal file: D:/Digital Alarm/Digital_Alarm.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source pb_det.tcl -notrace
+source push_button.tcl -notrace

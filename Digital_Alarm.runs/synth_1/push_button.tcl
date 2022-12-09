@@ -35,7 +35,7 @@ read_verilog -library xil_defaultlib {
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v}
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v}
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v}
-  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/pb_det.v}
+  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/push_button.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,12 +57,12 @@ set_property used_in_implementation false [get_files {{D:/Digital Alarm/Digital_
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top pb_det -part xc7a35tcpg236-1
+synth_design -top push_button -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef pb_det.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file pb_det_utilization_synth.rpt -pb pb_det_utilization_synth.pb"
+write_checkpoint -force -noxdef push_button.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file push_button_utilization_synth.rpt -pb push_button_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
