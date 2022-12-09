@@ -5,7 +5,7 @@ module digitalClock(input clk, reset, output [6:0] segments,output [3:0] anode_a
     wire [1:0] enable;
     wire [3:0] secUnits, minUnits, secTens, minTens;
     reg [3:0] sevenSegInput;
-    clockDivider #(250000) clkDivider(clk, reset, clkOut);
+    clk_divider #(250000) clkDivider(clk, reset, clkOut);
     counterModN #(2, 4) twoBitCounter(clkOut, reset, 1, enable);
     minSecCounter minSecondsCounter(clk, reset, secUnits, minUnits, secTens, minTens);
     sevenSegDecWithEn sevenSeg(enable, sevenSegInput, segments, anode_active);
