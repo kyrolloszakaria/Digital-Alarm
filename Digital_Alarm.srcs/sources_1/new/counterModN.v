@@ -1,7 +1,6 @@
 `timescale 1ns / 1ps
 
-module counterModN #(parameter x=3, n=8) (input clk, reset, enable, output [x-1:0] count);
-    reg [x-1:0] count;
+module counterModN #(parameter x=3, n=8) (input clk, reset, enable, output reg [x-1:0] count);
     always @(posedge clk, posedge reset) begin
         if(reset == 1)
             count <= 0;

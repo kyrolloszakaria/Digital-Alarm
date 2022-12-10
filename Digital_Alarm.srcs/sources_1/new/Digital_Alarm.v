@@ -2,17 +2,17 @@
 
 
 module Digital_Alarm(input clk, input rst, input en, input U, input D, input L,
- input R, input C, output reg [1:0] pos);
+ input R, input C, output [1:0] pos);
  
 wire pU,pD,pL,pR,pC;
 wire my_clk;
 clk_divider my_div(clk, rst, my_clk);
 // push buttons processing
-PushbuttonDetector pb1(clk,rst,U,pU);
-PushbuttonDetector pb2(clk,rst,D,pD);
-PushbuttonDetector pb3(clk,rst,L,pL);
-PushbuttonDetector pb4(clk,rst,R,pR);
-PushbuttonDetector pb5(clk,rst,C,pC);
+PushbuttonDetector pb1(my_clk,rst,U,pU);
+PushbuttonDetector pb2(my_clk,rst,D,pD);
+PushbuttonDetector pb3(my_clk,rst,L,pL);
+PushbuttonDetector pb4(my_clk,rst,R,pR);
+PushbuttonDetector pb5(my_clk,rst,C,pC);
 
 // Mode FSM:
 parameter Amin = 2'b00;
@@ -22,9 +22,7 @@ parameter Chour = 2'b11;
 
 reg [1:0] ps;
 reg [1:0] ns;
-always @(pL ,pR,ps) begin
-   
-   
+always @(pL or pR or ps) begin
     case(ps)
     Amin: if(pL) ns = Ahour;
        else if (pR) ns = Chour;
@@ -38,15 +36,15 @@ always @(pL ,pR,ps) begin
     Chour: if(pL) ns = Ahour;
         else if (pR) ns = Chour;
       else  ns=Amin;
-    default: ns = Amin;
+    default: ns = Chour;
    endcase
    end
 
 always @(posedge my_clk or posedge rst) begin
-if(rst) ps = Amin;
-else ps = ns;
+if(rst) ps <= Chour;
+else ps <= ns;
 end
-always @(ps)begin
-pos = ps;
-end
+
+assign pos = ps;
+
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Dec 10 03:38:41 2022
+| Date         : Sat Dec 10 10:21:40 2022
 | Host         : DESKTOP-8T4JQ0K running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Digital_Alarm_timing_summary_routed.rpt -pb Digital_Alarm_timing_summary_routed.pb -rpx Digital_Alarm_timing_summary_routed.rpx -warn_on_violation
 | Design       : Digital_Alarm
@@ -52,9 +52,9 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 99 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 33 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 2 register/latch pins with no clock driven by root clock pin: my_div/clk_out_reg/Q (HIGH)
+ There are 68 register/latch pins with no clock driven by root clock pin: my_div/clk_out_reg/Q (HIGH)
 
  There are 7 register/latch pins with no clock driven by root clock pin: pb3/newClk/clk_out_reg/Q (HIGH)
 

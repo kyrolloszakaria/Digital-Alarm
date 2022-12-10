@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Dec 10 03:37:57 2022
+| Date         : Sat Dec 10 10:20:56 2022
 | Host         : DESKTOP-8T4JQ0K running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Digital_Alarm_control_sets_placed.rpt
 | Design       : Digital_Alarm
@@ -34,9 +34,9 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            3 |
+|      4 |            2 |
 |     10 |            2 |
-|    16+ |            1 |
+|    16+ |            2 |
 +--------+--------------+
 
 
@@ -47,8 +47,8 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               8 |            2 |
-| No           | No                    | Yes                    |              24 |            4 |
-| No           | Yes                   | No                     |             198 |           40 |
+| No           | No                    | Yes                    |              24 |            5 |
+| No           | Yes                   | No                     |             198 |           43 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -58,15 +58,15 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------+---------------+------------------+------------------+----------------+
-|    Clock Signal    | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------------+---------------+------------------+------------------+----------------+
-|  my_div/CLK        |               | rst_IBUF         |                1 |              4 |
-|  pb3/newClk/clkOut |               |                  |                1 |              4 |
-|  pb4/newClk/clkOut |               |                  |                1 |              4 |
-|  pb3/newClk/clkOut |               | rst_IBUF         |                1 |             10 |
-|  pb4/newClk/clkOut |               | rst_IBUF         |                2 |             10 |
-|  clk_IBUF_BUFG     |               | rst_IBUF         |               40 |            198 |
-+--------------------+---------------+------------------+------------------+----------------+
++----------------------+---------------+------------------+------------------+----------------+
+|     Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------+---------------+------------------+------------------+----------------+
+|  pb4/newClk/clkOut   |               |                  |                1 |              4 |
+|  pb3/newClk/clkOut   |               |                  |                1 |              4 |
+|  pb4/newClk/clkOut   |               | rst_IBUF         |                3 |             10 |
+|  pb3/newClk/clkOut   |               | rst_IBUF         |                1 |             10 |
+|  clk_IBUF_BUFG       |               | rst_IBUF         |               14 |             66 |
+|  cnt_reg[31]_i_2_n_0 |               | rst_IBUF         |               30 |            136 |
++----------------------+---------------+------------------+------------------+----------------+
 
 
