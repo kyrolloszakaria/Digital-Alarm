@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
-module UD_counter #(parameter n = 4, parameter x = 3)(input clk,input up, input reset, input en, output reg [x-1:0]count);
-always@(posedge clk) 
+module UD_counter #(parameter n = 4, parameter x = 3)(input up, input reset, input en, output reg [x-1:0]count);
+always@( up or en) 
 begin
     if (reset) begin
         count <= 0; 
@@ -18,5 +18,6 @@ begin
             else
                 count <= count - 1;      
     end
+    else count <= count;
 end
 endmodule

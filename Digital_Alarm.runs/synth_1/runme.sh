@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log push_button.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source push_button.tcl
+EAStep vivado -log Digital_Alarm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Digital_Alarm.tcl

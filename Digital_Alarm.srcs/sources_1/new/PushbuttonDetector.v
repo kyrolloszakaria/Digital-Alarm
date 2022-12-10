@@ -23,7 +23,7 @@
 module PushbuttonDetector(input clk, reset, x, output z);
     wire clkOut;
     wire debOut, synOut;
-    clockDivider #(500000) newClk(clk, reset, clkOut);
+    clk_divider #(500000) newClk(clk, reset, clkOut);
     debouncer deb(clkOut, reset, x, debOut);
     synchronizer syn(clkOut, reset, debOut, synOut);
     risingEdgeDetector edgeDetector(clkOut, reset, synOut, z);

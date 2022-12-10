@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670628928">
-  <File Type="PA-TCL" Name="push_button.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="push_button_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="push_button_reports.tcl"/>
-  <File Type="RDS-RDS" Name="push_button.vds"/>
-  <File Type="RDS-UTIL" Name="push_button_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="push_button_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="push_button.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="push_button_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="push_button_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1670636154">
+  <File Type="PA-TCL" Name="Digital_Alarm.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Digital_Alarm_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Digital_Alarm_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Digital_Alarm.vds"/>
+  <File Type="RDS-UTIL" Name="Digital_Alarm_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Digital_Alarm_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Digital_Alarm.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Digital_Alarm_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Digital_Alarm_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/RSD_Moore.v">
+    <File Path="$PSRCDIR/sources_1/new/PushbuttonDetector.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -32,6 +32,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/risingEdgeDetector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/synchronizer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -39,16 +46,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/push_button.v">
+    <File Path="$PSRCDIR/sources_1/new/Digital_Alarm.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/pb_det.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,7 +61,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/Digital_Alarm.v">
+    <File Path="$PSRCDIR/sources_1/new/DFF.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/push_button.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RSD_Moore.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pb_det.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -104,7 +127,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="push_button"/>
+      <Option Name="TopModule" Val="Digital_Alarm"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -128,7 +151,7 @@
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/test_con.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Digital_Alarm.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>

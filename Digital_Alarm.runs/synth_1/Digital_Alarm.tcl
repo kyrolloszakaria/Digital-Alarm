@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -31,11 +32,12 @@ set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo {d:/Digital Alarm/Digital_Alarm.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/RSD_Moore.v}
+  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/PushbuttonDetector.v}
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v}
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v}
+  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/risingEdgeDetector.v}
   {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v}
-  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/push_button.v}
+  {D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/Digital_Alarm.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -57,12 +59,12 @@ set_property used_in_implementation false [get_files {{D:/Digital Alarm/Digital_
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top push_button -part xc7a35tcpg236-1
+synth_design -top Digital_Alarm -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef push_button.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file push_button_utilization_synth.rpt -pb push_button_utilization_synth.pb"
+write_checkpoint -force -noxdef Digital_Alarm.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Digital_Alarm_utilization_synth.rpt -pb Digital_Alarm_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

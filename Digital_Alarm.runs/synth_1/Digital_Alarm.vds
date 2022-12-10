@@ -1,0 +1,487 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 10 03:35:59 2022
+# Process ID: 12776
+# Current directory: D:/Digital Alarm/Digital_Alarm.runs/synth_1
+# Command line: vivado.exe -log Digital_Alarm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Digital_Alarm.tcl
+# Log file: D:/Digital Alarm/Digital_Alarm.runs/synth_1/Digital_Alarm.vds
+# Journal file: D:/Digital Alarm/Digital_Alarm.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Digital_Alarm.tcl -notrace
+Command: synth_design -top Digital_Alarm -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24900 
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v:24]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 422.270 ; gain = 107.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Digital_Alarm' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/Digital_Alarm.v:4]
+	Parameter Amin bound to: 2'b00 
+	Parameter Ahour bound to: 2'b01 
+	Parameter Cmin bound to: 2'b10 
+	Parameter Chour bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v:1]
+	Parameter n bound to: 50000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (1#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PushbuttonDetector' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/PushbuttonDetector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider__parameterized0' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v:1]
+	Parameter n bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider__parameterized0' (1#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/clk_divider.v:1]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/debouncer.v:22]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (3#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/synchronizer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'risingEdgeDetector' [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/risingEdgeDetector.v:22]
+	Parameter A bound to: 2'b00 
+	Parameter B bound to: 2'b01 
+	Parameter C bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'risingEdgeDetector' (4#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/risingEdgeDetector.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'PushbuttonDetector' (5#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/PushbuttonDetector.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/Digital_Alarm.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'Digital_Alarm' (6#1) [D:/Digital Alarm/Digital_Alarm.srcs/sources_1/new/Digital_Alarm.v:4]
+WARNING: [Synth 8-3331] design Digital_Alarm has unconnected port en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 455.309 ; gain = 140.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 455.309 ; gain = 140.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 455.309 ; gain = 140.871
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc]
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_Alarm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_Alarm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'reset'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[0]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[1]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[2]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'anode_active[3]'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_Alarm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_Alarm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sig'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sig'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tick'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'tick'. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Digital_Alarm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Digital_Alarm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 784.086 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 784.086 ; gain = 469.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 784.086 ; gain = 469.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 784.086 ; gain = 469.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'risingEdgeDetector'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       A |                               00 |                               00
+                       B |                               01 |                               01
+                       C |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'risingEdgeDetector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 784.086 ; gain = 469.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input      2 Bit        Muxes := 5     
+	   2 Input      2 Bit        Muxes := 18    
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Digital_Alarm 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 3     
+	   6 Input      2 Bit        Muxes := 1     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module synchronizer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module risingEdgeDetector 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "my_div/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "my_div/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb1/newClk/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb1/newClk/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb2/newClk/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb2/newClk/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb3/newClk/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb3/newClk/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb4/newClk/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb4/newClk/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb5/newClk/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pb5/newClk/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Digital_Alarm has unconnected port en
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 784.086 ; gain = 469.648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 788.344 ; gain = 473.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 788.633 ; gain = 474.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |     6|
+|4     |LUT4   |    39|
+|5     |LUT5   |   219|
+|6     |LUT6   |     2|
+|7     |FDCE   |    27|
+|8     |FDRE   |   208|
+|9     |IBUF   |     7|
+|10    |OBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-------------------------------+------+
+|      |Instance         |Module                         |Cells |
++------+-----------------+-------------------------------+------+
+|1     |top              |                               |   559|
+|2     |  my_div         |clk_divider                    |    82|
+|3     |  pb1            |PushbuttonDetector             |    93|
+|4     |    deb          |debouncer_16                   |     4|
+|5     |    edgeDetector |risingEdgeDetector_17          |     4|
+|6     |    newClk       |clk_divider__parameterized0_18 |    83|
+|7     |    syn          |synchronizer_19                |     2|
+|8     |  pb2            |PushbuttonDetector_0           |    93|
+|9     |    deb          |debouncer_12                   |     4|
+|10    |    edgeDetector |risingEdgeDetector_13          |     4|
+|11    |    newClk       |clk_divider__parameterized0_14 |    83|
+|12    |    syn          |synchronizer_15                |     2|
+|13    |  pb3            |PushbuttonDetector_1           |    93|
+|14    |    deb          |debouncer_8                    |     4|
+|15    |    edgeDetector |risingEdgeDetector_9           |     5|
+|16    |    newClk       |clk_divider__parameterized0_10 |    82|
+|17    |    syn          |synchronizer_11                |     2|
+|18    |  pb4            |PushbuttonDetector_2           |    93|
+|19    |    deb          |debouncer_4                    |     4|
+|20    |    edgeDetector |risingEdgeDetector_5           |     5|
+|21    |    newClk       |clk_divider__parameterized0_6  |    82|
+|22    |    syn          |synchronizer_7                 |     2|
+|23    |  pb5            |PushbuttonDetector_3           |    93|
+|24    |    deb          |debouncer                      |     4|
+|25    |    edgeDetector |risingEdgeDetector             |     4|
+|26    |    newClk       |clk_divider__parameterized0    |    83|
+|27    |    syn          |synchronizer                   |     2|
++------+-----------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 801.680 ; gain = 158.465
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 801.680 ; gain = 487.242
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 31 Warnings, 28 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 807.160 ; gain = 505.574
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Digital Alarm/Digital_Alarm.runs/synth_1/Digital_Alarm.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Digital_Alarm_utilization_synth.rpt -pb Digital_Alarm_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 807.160 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 03:36:53 2022...

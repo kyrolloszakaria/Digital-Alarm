@@ -22,12 +22,6 @@
 
 module push_button(input clk, input rst, input sig, output tick);
 
-wire my_clk;
-wire debounced_sig;
-wire synced_sig;
-clk_divider my_div(clk, rst, my_clk);
-debouncer d(my_clk, rst, sig, debounced_sig);
-synchronizer s(my_clk, rst, debounced_sig, synced_sig);
-RSD_Moore rsd(my_clk, rst ,synced_sig, tick);
+PushbuttonDetector pp(clk, rst, sig, tick);
 
 endmodule

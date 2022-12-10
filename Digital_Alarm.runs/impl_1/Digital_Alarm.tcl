@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -74,11 +75,11 @@ set rc [catch {
   set_property parent.project_path {D:/Digital Alarm/Digital_Alarm.xpr} [current_project]
   set_property ip_output_repo {{D:/Digital Alarm/Digital_Alarm.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{D:/Digital Alarm/Digital_Alarm.runs/synth_1/push_button.dcp}}
+  add_files -quiet {{D:/Digital Alarm/Digital_Alarm.runs/synth_1/Digital_Alarm.dcp}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/Digital_Alarm.xdc}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/digitalClock_const.xdc}}
   read_xdc {{D:/Digital Alarm/Digital_Alarm.srcs/constrs_1/new/test_con.xdc}}
-  link_design -top push_button -part xc7a35tcpg236-1
+  link_design -top Digital_Alarm -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -94,8 +95,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force push_button_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file push_button_drc_opted.rpt -pb push_button_drc_opted.pb -rpx push_button_drc_opted.rpx"
+  write_checkpoint -force Digital_Alarm_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file Digital_Alarm_drc_opted.rpt -pb Digital_Alarm_drc_opted.pb -rpx Digital_Alarm_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -114,10 +115,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force push_button_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file push_button_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file push_button_utilization_placed.rpt -pb push_button_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file push_button_control_sets_placed.rpt"
+  write_checkpoint -force Digital_Alarm_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file Digital_Alarm_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file Digital_Alarm_utilization_placed.rpt -pb Digital_Alarm_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file Digital_Alarm_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -133,19 +134,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force push_button_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file push_button_drc_routed.rpt -pb push_button_drc_routed.pb -rpx push_button_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file push_button_methodology_drc_routed.rpt -pb push_button_methodology_drc_routed.pb -rpx push_button_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file push_button_power_routed.rpt -pb push_button_power_summary_routed.pb -rpx push_button_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file push_button_route_status.rpt -pb push_button_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file push_button_timing_summary_routed.rpt -pb push_button_timing_summary_routed.pb -rpx push_button_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file push_button_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file push_button_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file push_button_bus_skew_routed.rpt -pb push_button_bus_skew_routed.pb -rpx push_button_bus_skew_routed.rpx"
+  write_checkpoint -force Digital_Alarm_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file Digital_Alarm_drc_routed.rpt -pb Digital_Alarm_drc_routed.pb -rpx Digital_Alarm_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file Digital_Alarm_methodology_drc_routed.rpt -pb Digital_Alarm_methodology_drc_routed.pb -rpx Digital_Alarm_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file Digital_Alarm_power_routed.rpt -pb Digital_Alarm_power_summary_routed.pb -rpx Digital_Alarm_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file Digital_Alarm_route_status.rpt -pb Digital_Alarm_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file Digital_Alarm_timing_summary_routed.rpt -pb Digital_Alarm_timing_summary_routed.pb -rpx Digital_Alarm_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file Digital_Alarm_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file Digital_Alarm_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file Digital_Alarm_bus_skew_routed.rpt -pb Digital_Alarm_bus_skew_routed.pb -rpx Digital_Alarm_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force push_button_routed_error.dcp
+  write_checkpoint -force Digital_Alarm_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -157,10 +158,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force push_button.mmi }
-  write_bitstream -force push_button.bit 
-  catch {write_debug_probes -quiet -force push_button}
-  catch {file copy -force push_button.ltx debug_nets.ltx}
+  catch { write_mem_info -force Digital_Alarm.mmi }
+  write_bitstream -force Digital_Alarm.bit 
+  catch {write_debug_probes -quiet -force Digital_Alarm}
+  catch {file copy -force Digital_Alarm.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
