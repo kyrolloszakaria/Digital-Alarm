@@ -1,23 +1,53 @@
-`timescale 1ns / 1ps
+module UD_counter(
+    input en, up, rst,
+    input [2:0] ps, 
+    output reg [12:0] count,
+    output reg [12:0] count2
+);
 
-module UD_counter #(parameter n = 4, parameter x = 3)(input up, input reset, input en, output reg [x-1:0]count);
-always@( up or en) 
-begin
-    if (reset) begin
-        count <= 0; 
+    always@(posedge en or posedge rst) begin
+        if (rst) count = 0;
+        else if(en) begin
+            if(up == 1) begin
+                if(count >= 13'd5959)count = 0;
+                else begin
+                    if (ps == 3'b001) count = count + 1;
+                    else if (ps == 3'b010) count = count + 100;
+                    else count = count;
+                end
+            end
+            else if(up == 0) begin
+                if(count <= 0)count = 13'd5959;
+                else begin
+                    if (ps == 3'b001) count = count - 1;
+                    else if (ps == 3'b010) count = count - 100;
+                    else count = count;
+                end
+            end
+        end
+        else count = count;
     end
-    else if(en) begin
-        if(up == 1)
-            if(count == n - 1)
-                count <= 0;
-            else 
-                count <= count +1;
-        else if(up == 0)
-            if(count == 0)
-                count <= ((2<<n)-1); 
-            else
-                count <= count - 1;      
+    
+    always@(posedge en or posedge rst) begin
+        if (rst) count2 = 0;
+        else if(en) begin
+            if(up == 1) begin
+                if(count2 >= 13'd5959)count2 = 0;
+                else begin
+                    if (ps == 3'b100) count2 = count2 + 1;
+                    else if (ps == 3'b011) count2 = count2 + 100;
+                    else count2 = count2;
+                end
+            end
+            else if(up == 0) begin
+                if(count2 <= 0)count2 = 13'd5959;
+                else begin
+                    if (ps == 3'b100) count2 = count2 - 1;
+                    else if (ps == 3'b011) count2 = count2 - 100;
+                    else count2 = count2;
+                end
+            end
+        end
+        else count2 = count2;
     end
-    else count <= count;
-end
 endmodule
